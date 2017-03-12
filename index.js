@@ -15,6 +15,6 @@ function b() {
 function d() {
 	console.log("d")
 }
-function e(){
+function c(){
 	console.log("c")
 }
