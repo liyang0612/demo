@@ -1,6 +1,7 @@
 window.onload = function() {
     a();
     b();
+    d();
 }
 
 function a() {
@@ -14,6 +15,6 @@ function b() {
 function d() {
 	console.log("d")
 }
-function c(){
+function e(){
 	console.log("c")
 }
