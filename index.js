@@ -4,7 +4,7 @@ window.onload = function() {
 }
 
 function a() {
-    console.log("a")
+    console.log("aa")
 }
 
 function b() {
@@ -13,4 +13,7 @@ function b() {
 
 function d() {
 	console.log("d")
+}
+function c(){
+	console.log("c")
 }
