@@ -33,5 +33,10 @@ function getAge(age) {
 function getClass(num) {
 	return num
 }
+
 function getOrigin() {
+}
+
+function getSum(sum){
+	return sum
 }
