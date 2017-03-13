@@ -25,3 +25,11 @@ function e(){
 function name() {
 	console.log("liyang")
 }
+
+function getAge(age) {
+	return age
+}
+
+function getClass(num) {
+	return num
+}
