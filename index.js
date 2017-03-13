@@ -34,3 +34,6 @@ function getClass(num) {
 	return num
 }
 
+function getSum(sum){
+	return sum
+}
