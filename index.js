@@ -1,10 +1,11 @@
 window.onload = function() {
     a();
     b();
+    d();
 }
 
 function a() {
-    console.log("a")
+    console.log("aa")
 }
 
 function b() {
@@ -12,5 +13,12 @@ function b() {
 }
 
 function c() {
+		console.log("c")
+}
+
+function d() {
+	console.log("d")
+}
+function e(){
 	console.log("c")
 }
