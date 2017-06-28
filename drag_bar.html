@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--<link rel="stylesheet" href="css/bootstrap.min.css">-->
+    <link rel="stylesheet" href="css/test.css">
+    <title>Document</title>
+</head>
+<style>
+    .box {
+        background: #ccc;
+        width: 300px;
+    }
+    .line {
+        width: 20px;
+        height: 50px;
+        background: #ffcc00;
+    }
+    .imgs{
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    .block {
+        width: 20px;
+        height: 50px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 100;
+        background: red;
+    }
+</style>
+<body>
+<div class="box">
+    <div class="line"></div>
+    <div class="block"></div>
+    <div class="imgs"><img src="./image/1.png"></div>
+</div>
+<script>
+    var line = document.querySelector('.line');
+    var box = document.querySelector('.box');
+    var block = document.querySelector('.imgs');
+    var redBlock = document.querySelector('.block');
+    function blockMove(eve) {
+        if(eve.clientX > 280){
+            redBlock.style.left = "280px";
+            line.style.width = "280px";
+        }else {
+            redBlock.style.left = eve.clientX + "px";
+            line.style.width = eve.clientX + "px";
+        }
+    }
+    redBlock.addEventListener('mousedown', function (w) {
+        w.preventDefault();
+        box.addEventListener('mousemove',blockMove)
+    })
+
+    redBlock.addEventListener('mouseup', function (w) {
+        console.log("解绑")
+        box.removeEventListener('mousemove', blockMove)
+    })
+    box.addEventListener('mouseleave', function (e) {
+        console.log("同样解绑")
+        box.removeEventListener('mousemove', blockMove)
+    })
+</script>
+</body>
+</html>
