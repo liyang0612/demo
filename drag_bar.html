@@ -5,14 +5,12 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <!--<link rel="stylesheet" href="css/bootstrap.min.css">-->
-    <link rel="stylesheet" href="css/test.css">
     <title>Document</title>
 </head>
 <style>
     .box {
         background: #ccc;
-        width: 300px;
+        width: 280px;
     }
     .line {
         width: 20px;
@@ -25,20 +23,21 @@
         left: 0;
     }
     .block {
-        width: 20px;
-        height: 50px;
+        width: 35px;
+        height: 35px;
         position: absolute;
-        top: 0;
+        top: 8px;
         left: 0;
         z-index: 100;
-        background: red;
+        border-radius: 50%;
+        background: #f0f0f0 url("data:image/png;base64,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") no-repeat top/100%;
     }
 </style>
 <body>
 <div class="box">
     <div class="line"></div>
     <div class="block"></div>
-    <div class="imgs"><img src="./image/1.png"></div>
+    <div class="imgs"><img src="./images/1.png"></div>
 </div>
 <script>
     var line = document.querySelector('.line');
@@ -46,26 +45,25 @@
     var block = document.querySelector('.imgs');
     var redBlock = document.querySelector('.block');
     function blockMove(eve) {
-        if(eve.clientX > 280){
+        var x = eve.touches[0].pageX;
+        if(x > 280){
             redBlock.style.left = "280px";
             line.style.width = "280px";
-        }else {
-            redBlock.style.left = eve.clientX + "px";
-            line.style.width = eve.clientX + "px";
+        }else if(x < 0) {
+            redBlock.style.left = "0px";
+            line.style.width = "0px";
+        }else{
+            redBlock.style.left = x + "px";
+            line.style.width = x + "px";
         }
     }
-    redBlock.addEventListener('mousedown', function (w) {
+    redBlock.addEventListener('touchstart', function (w) {
         w.preventDefault();
-        box.addEventListener('mousemove',blockMove)
+        box.addEventListener('touchmove',blockMove)
     })
 
-    redBlock.addEventListener('mouseup', function (w) {
-        console.log("解绑")
-        box.removeEventListener('mousemove', blockMove)
-    })
-    box.addEventListener('mouseleave', function (e) {
-        console.log("同样解绑")
-        box.removeEventListener('mousemove', blockMove)
+    redBlock.addEventListener('touchend', function (w) {
+        box.removeEventListener('touchmove', blockMove)
     })
 </script>
 </body>
