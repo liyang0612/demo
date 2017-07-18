@@ -15,6 +15,11 @@ address,cite,code,em,th {font-weight:normal; font-style:normal;}
 	overflow: hidden;
 	box-sizing: border-box;
 }
+.ca-year-head {
+	text-align: center;
+	font-size: 24px;
+	line-height: 32px;
+}
 .ca-header ul li{
 	float: left;
 	width: 14.2857%;
@@ -23,7 +28,7 @@ address,cite,code,em,th {font-weight:normal; font-style:normal;}
 }
 #calendar .ca-item-box {
 	position: absolute;
-	top: 32px;
+	top: 64px;
 	left: 0;
 	width: 100%;
 	transition: all .5s ease-in;
