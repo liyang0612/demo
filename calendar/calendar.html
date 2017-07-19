@@ -12,8 +12,8 @@
 </body>
 <script type="text/javascript" src="./calendar.js"></script>
 <script type="text/javascript">
-	var calendarDom = document.getElementById('calendar');
-  var calendar = new Calendar(calendarDom);
-  calendar.init();
+  var calendar = new Calendar('calendar', {
+  	isHideHead: false, //是否隐藏头部
+  });
 </script>
 </html>
