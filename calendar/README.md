@@ -32,3 +32,5 @@ Element.addEventListenter('事件名称', function() {
 //亦可以去Calendar的原型上进行扩展
 ```
 
+ [查看demo效果](https://liyang0612.github.io/demo/calendar/calendar.html "查看demo")
+
