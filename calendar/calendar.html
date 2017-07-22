@@ -15,5 +15,10 @@
   var calendar = new Calendar('calendar', {
   	isHideHead: false, //是否隐藏头部
   });
+  setTimeout(function() {
+  	alert("切换年份");
+  	calendar.changeYear += 1; 
+  	calendar.slideYear();
+  }, 3000)
 </script>
 </html>
