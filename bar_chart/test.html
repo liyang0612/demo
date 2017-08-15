@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>cavas进度条</title>
+  <script type="text/javascript" src="./index.js"></script>
+</head>
+<style>
+.earnings-box {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0,0,0,.3);
+  border-radius: 4px;
+}
+
+.header {
+  padding: 10px 15px;
+  width: 100;
+  font-size: 20px;
+}
+
+.header span {
+  display: inline-block;
+}
+
+.header span:first-child {
+  float: left;
+}
+
+.header span:last-child {
+  float: right;
+}
+
+.header:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+</style>
+
+<body>
+  <div class="earnings-box">
+    <div class="header">
+      <span>2017年</span>
+      <span>金额（万）</span>
+    </div>
+    <canvas class="earnings" ref="main" width="570" height="420">
+      </cavas>
+  </div>
+  <script>
+  window.onload = function() {
+    var main = document.querySelector('.earnings');
+    var arr = [100, 200, 135, 176, 190, 143, 178, 167, 189, 112, 145, 176];
+    barChart(main, arr);
+  }
+  </script>
+</body>
+
+</html>
