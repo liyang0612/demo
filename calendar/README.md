@@ -26,7 +26,7 @@ var calendar = new Calendar('calendar', {
 
 Element.addEventListenter('事件名称', function() {
 	calendar.change += 1; //切换到下一年
-    calendar.slideYear();
+  calendar.slideYear();
 })
 
 //亦可以去Calendar的原型上进行扩展
